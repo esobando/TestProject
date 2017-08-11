@@ -45,7 +45,7 @@ public class CarRecyclerViewFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvCarList = view.findViewById(R.id.rvCarList);
+        rvCarList = (RecyclerView) view.findViewById(R.id.rvCarList);
         layoutManager = new LinearLayoutManager(view.getContext());
         itemAnimator = new DefaultItemAnimator();
         rvCarList.setLayoutManager(layoutManager);

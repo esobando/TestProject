@@ -43,11 +43,11 @@ public class AddNewCarFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_new_car, container, false);
-        etModel = view.findViewById(R.id.etModel);
-        etType = view.findViewById(R.id.etType);
-        etYear = view.findViewById(R.id.etYear);
-        rvCardList =view.findViewById(R.id.rvCarList);
-        btnSaveCar = view.findViewById(R.id.btnSaveCar);
+        etModel = (EditText) view.findViewById(R.id.etModel);
+        etType = (EditText) view.findViewById(R.id.etType);
+        etYear = (EditText) view.findViewById(R.id.etYear);
+        rvCardList = (RecyclerView) view.findViewById(R.id.rvCarList);
+        btnSaveCar = (Button) view.findViewById(R.id.btnSaveCar);
         return view;
     }
 
