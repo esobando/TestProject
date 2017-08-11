@@ -50,6 +50,7 @@ public class CarListAdapter extends RecyclerView.Adapter<CarListAdapter.ViewHold
         holder.tvYear.setText("" + car.getYear());
 
     }
+    //comment
 
     @Override
     public int getItemCount() {
