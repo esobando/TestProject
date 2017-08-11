@@ -4,7 +4,8 @@ import android.content.Context;
         import android.os.Bundle;
         import android.support.annotation.Nullable;
         import android.support.v4.app.Fragment;
-        import android.view.LayoutInflater;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.Button;
@@ -28,6 +29,7 @@ public class AddNewCarFragment extends Fragment {
     EditText etModel;
     EditText etType;
     EditText etYear;
+    RecyclerView rvCardList;
 
     private OnFragmentInteractionListener mListener;
 
@@ -41,7 +43,11 @@ public class AddNewCarFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_new_car, container, false);
-
+        etModel = view.findViewById(R.id.etModel);
+        etType = view.findViewById(R.id.etType);
+        etYear = view.findViewById(R.id.etYear);
+        rvCardList =view.findViewById(R.id.rvCarList);
+        btnSaveCar = view.findViewById(R.id.btnSaveCar);
         return view;
     }
 
